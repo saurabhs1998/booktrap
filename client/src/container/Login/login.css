@@ -1,0 +1,182 @@
+
+.parentModel{
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+  background-image: url('../../image/login.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-position-x: right;
+  height: 100vh;
+   
+  margin: 0px;
+
+}
+.form{
+    margin: 0px;
+}
+
+
+.loginModel{
+    color: white;
+    box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.2);
+    padding: 45px;
+    border-bottom:5px solid #FFC81A;
+    border-radius: 5px;
+ 
+}
+.loginform input{
+    background-color:#616161;
+    border:none;
+    width: 100%;
+    margin:5px 0px;
+    padding: 8px;
+    color: white;
+}
+label{
+    margin-top: 10px;
+}
+.loginbutton{
+    width: 100%;
+    background-color:#02BAD3;
+    opacity: 87%;
+    color: white;
+    border:none;   
+    padding:8px 12px;
+}
+.loginbutton:hover{
+    opacity: 100%;
+    
+    font-weight: 600;
+}
+.loginbutton p{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1.2rem;
+}
+.parentModel nav{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: inherit;
+}
+.parentModel nav a{
+    color: white;
+}
+#errorMessage{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: tomato;
+}
+.parentModelMob{
+    display: none;
+}
+@media only screen and (max-width:800px)
+{
+    .parentModelMob{
+        display: block;
+        background-image: url('../../image/gummy-travel.png');
+      
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: 30px;
+        background-color: #4F3183;
+
+        color: white;
+        text-align: center;
+        padding: 30px 0px;
+        
+      height: 100vh;
+      position: relative;
+    
+    }
+    .parentModelMob h1{
+        font-family: 'Poppins', sans-serif;
+        font-style: 1.5em;
+    }
+    .loginModelMob{
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        background-color: #262833;
+        border-top-right-radius: 45px;
+        border-top-left-radius: 45px;
+    }
+    .parentModel{
+        display: none;
+    }
+    
+    
+   
+   
+    
+    #errorMessage{
+        font-size: 0.9em;
+    }
+    label{
+        margin: 0px;
+        padding: 0px;
+        font-size: 0.9em;
+    }
+    .loginform{
+        min-width: 238px;
+    }
+   
+    
+
+
+    /* new part */
+    .loginModelForm{
+        padding: 2em 2em 0.8em 2em;
+    }
+    .loginModelForm input{
+        display: block;
+        width: 100%;
+        padding:12px 24px;
+        margin-bottom: 15px;
+        background-color: inherit;
+       border-radius: 25px;
+        border:1px solid grey;
+        color: mistyrose;
+        font-size: 1em;
+    }
+    .loginModelForm input:focus{
+        outline: none;
+        
+    }
+    .loginHr hr {
+        border: none;
+        border-top: 1px double grey;
+        color: #333;
+        overflow: visible;
+        text-align: center;
+        height: 5px;
+    }
+    
+    .loginHr{
+        margin: 2em 2.8em 0em 2em;
+    }
+    .loginHr hr:after {
+        background-color: #262833;
+        content: 'OR';
+        padding: 0 12px;
+        font-size: 14px;
+        position: relative;
+        font-family: 'Segoe UI';
+        top: -13px;
+        color: grey;
+        font-weight: 500;
+    }
+    .loginFooter{
+       font-weight: 400;
+       color: gray;
+       font-size: 1.2em;
+      
+    }
+    .loginFooter a{
+        color: dodgerblue;
+        opacity: 87%;
+    }
+}

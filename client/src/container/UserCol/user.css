@@ -1,0 +1,48 @@
+.usercolcontainer{
+    margin: 1em;
+}
+.usercol{
+    background-image: url(../../image/usersay.png);
+    background-repeat: no-repeat;
+    background-position: right;
+   
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+   
+}
+.innerContentUser{
+    margin: 120px 0px;
+}
+.usercolimage{
+    position: absolute;
+    bottom: -20px;
+    left: 4em;
+}
+
+@media only screen and (max-width:800px)
+{
+    .usercolcontainer{
+        margin: 1em;
+    }
+    .usercol{
+        background-image: none;
+        position: relative;
+        background-position: bottom;
+      
+    }
+    .innerContentUser{
+        margin: 60px 0px;
+    }
+    .innerContentUser h2{
+        font-family: 'Poppins', sans-serif;
+    }
+    .innerContentUser h4{
+        font-family: 'Poppins', sans-serif;
+    }
+    .usercolimage{
+        position:absolute;
+        bottom:-55px;
+        left: 70px;
+
+    }
+}

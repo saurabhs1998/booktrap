@@ -1,0 +1,72 @@
+.headingTitle{
+    text-align: center;
+   
+  }
+  .headingTitle h4{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 2em;
+    position: relative;
+    font-weight: 600;
+ display: inline;
+ 
+    
+  }
+  
+  
+  .headingTitle h4:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background:turquoise;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .headingTitle h4:hover:after { 
+    width: 100%;
+    
+    left: 0; 
+  }
+
+.headingTitleMob{
+    text-align: center;
+   
+  }
+  .headingTitleMob h4{
+    text-align: center;
+     font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 1.5em;
+    position: relative;
+    
+ display: inline;
+ 
+    
+  }
+  
+  
+  .headingTitleMob h4:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background:turquoise;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .headingTitleMob h4:hover:after { 
+    width: 100%;
+    left: 0; 
+  }
+
+
+  
+  

@@ -1,0 +1,36 @@
+.monthsPickContainer{
+    display: flex;
+    flex-direction: row;
+    margin: 2em;
+    color: white;
+    flex-wrap: wrap;
+}
+.monthsPickContainer>div{
+    margin:15px;
+    
+}
+.desktopViewMonth{
+    display: block;
+}
+.mobileViewMonth{
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+   .desktopViewMonth{
+       display: none;
+   }
+   .mobileViewMonth{
+       display: block;
+       margin: 45px 0px;
+   }
+   .monthsPickContainer{
+      margin: 1.5em;
+      align-items: center;
+      justify-content: center;
+       flex-wrap: wrap;
+   }
+   .monthsPickContainer>div{
+       margin:10px 5px;
+   }
+  }
+ 

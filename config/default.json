@@ -1,0 +1,5 @@
+{
+ 
+    "mongodbURL":"mongodb+srv://ydhash12:Indianarmy@12345@booktrap-cfbj8.mongodb.net/test?retryWrites=true&w=majority",
+    "jwtSecret":"mypersonal" 
+}

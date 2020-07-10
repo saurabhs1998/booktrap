@@ -1,0 +1,135 @@
+/* .signupContent{
+    margin: 64px 32px;
+  
+}
+.signpart1{
+  
+}
+.signpart1 h1{
+    font-family: 'Montserrat', sans-serif;
+}
+.signpart1 small{
+    opacity: 87%;
+    font-size: 0.9em;
+}
+.signpart2{
+    background-image: url('../../image/gummy-living-room.png');
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-color: #B0D6DE;
+
+    background-position: center;
+}
+.signupflex{
+    display: flex;
+    width: 100%;
+ 
+}
+.signupflex>div{
+    direction: row;
+    flex-grow: 1;
+}
+.signupflex input{
+    border: none;
+    margin: 15px;
+   flex-grow: 1;
+    background-color: inherit;
+    border-bottom: 1px solid blueviolet;
+} */
+.signupContainer{
+    padding: 0px;
+}
+
+.signupForm{
+    margin: 45px;
+}
+.signupForm h2{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.signupForm input{
+   border:none;
+   border-bottom: 1px solid #0BC6D5;
+   padding: 12px 20px;
+   width: 100%;
+  background-color: #1E2029;
+   color: white;
+}
+
+.signupForm  label{
+    font-size: 0.9em; 
+    
+}
+.signupForm textarea{
+    background-color: inherit;
+    width: 100%;
+    height: 70px;
+    opacity: 87%;
+    border: 1px solid #0BC6D5;
+    color: white;
+    padding: 8px;
+}
+.signupForm h2:hover{
+    color:#FFC857;
+}
+.signupImage
+{
+    background-image: url('../../image/gummy-living-room.png');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color:#BBDEFB;
+}
+.errorMessage{
+    display: inline;
+    float: right;
+}
+.errorMessage:hover{
+    cursor: pointer;
+}
+.signupParentjumbo{
+    padding: 0px;
+    margin: 45px;
+}
+.signupParentContainerMob{
+    display: none;
+}
+
+@media only screen and (max-width:800px)
+{
+    .signupParentjumbo{
+       display: none;
+    }
+    .signupParentContainerMob{
+        display: block;
+        margin: 1em;
+      
+    }
+    .signupFormMob input{
+        width: 100%;
+       background-color: inherit;
+       border:none;
+        margin-bottom: 25px;
+        color: #f7f7f7;
+        border-bottom: 1px double rgba(56, 97, 95, 0.7);
+       padding: 8px 12px;
+       
+       
+    }
+    .signupFormMob input:focus{
+        outline-color: #cceabb;
+    }
+    .signupFormMob textarea{
+        width: 100%;
+        background-color: inherit;
+        color: #f7f7f7;
+        height:80px;
+        font-size: 0.9em;
+        border: 1px double rgba(56, 97, 95, 0.7);
+        padding: 8px;
+    }
+    .signupFormMob textarea:focus{
+        outline-color: #cceabb;   
+    }
+}

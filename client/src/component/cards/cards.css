@@ -1,0 +1,76 @@
+
+
+
+ .bannerPosterContainer{
+     background-image: url('../../image/friendly-ones.png');
+     height: 100vh;
+     background-repeat: no-repeat;
+     background-position: left;
+     align-items: center;
+     justify-content: center;
+     display: flex;
+     position: relative;
+ }
+ .bannerContent{
+   text-align: center;
+   position: absolute;
+   top: 10%;
+     color: white
+ }
+ .bannerContent h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 3em;
+ }
+ .bannerContent h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+ }
+ .layoutButton{
+    background-color:#6A5ACD;
+    border:1px solid #6A5ACD;
+    border-radius: 3px;
+    font-weight: 500;
+     font-family: 'Poppins', sans-serif;
+    color: white;
+    margin-top: 15px;
+    padding:10px 20px;
+}
+.layoutButton:hover{
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.5);
+    background-color: dodgerblue;
+   
+    transition: background-color 0.2s ease-in-out;
+}
+@media only screen and (max-width:800px)
+{
+    .bannerPosterContainer{
+        background-image: none;
+        background-image: url('../../image/pale.png');
+        height: 100vh;
+        background-position:bottom
+        
+    }
+    .bannerContent{
+        text-align: center;
+        position: absolute;
+          color: white;
+      }
+      .bannerContent h2{
+        font-family: 'Poppins', sans-serif;
+         font-weight: 400;
+         font-size: 2.5em;
+         margin-bottom: 32px;
+         color: whitesmoke;
+      }
+      .bannerContent h3{
+         
+         font-size: 1.4em;
+         color: rosybrown;
+      }
+      .layoutButton{
+          margin-top: 24px;
+       color:white;
+    }
+   
+}

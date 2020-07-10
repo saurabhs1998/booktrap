@@ -1,0 +1,92 @@
+
+nav {
+    background-color: #262833;
+    padding: 15px;
+    font-family: 'Titillium Web', sans-serif;
+    opacity: 0.9;
+    box-sizing: border-box;
+}
+.nav-body nav a{
+    padding: 15px;
+    color: #FFAF5F;
+    text-decoration: none;
+    
+}
+
+.nav-header{
+    font-family:'Titillium Web', sans-serif;
+    box-sizing: border-box;
+    color:#FFAF5F ;
+}
+.nav-header h2{
+    padding: 10px;
+}
+.nav-header h4{
+    padding: 10px;
+}
+.nav-body nav{
+    text-align: right;
+    background-color: #3C242E;
+}
+.nav-body nav a:hover{
+    color: #262833;
+    background-color: #FFAF5F;
+    border-radius: 5%;
+    text-decoration: none;
+   padding: 0px;
+   padding: 10px 20px;
+   opacity: 0.9;
+}
+
+
+
+
+.authentication-flex{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    top: 0;
+    left: 0;
+    color: white;
+   
+}
+.authenticate-flex-mob{
+    display: none;
+}
+
+@media only screen  and (max-width:800px)
+{
+    .authentication-flex{
+        display: none;
+    }
+    .authenticate-flex-mob{
+        display: flex;
+        color: white;
+    }
+   
+    .authenticate-mob-open{
+        display: flex;
+        flex-direction: column;
+        color: white;
+       
+       height: 100%;
+       
+    }
+    .nav-mob nav{
+        text-align: left;
+        padding: 17px;
+        background-color: #3C242E;
+    }
+    .nav-mob nav a{
+        display: block;
+        padding: 15px;
+        color: #ffa55f;
+        font-size: 1em;
+        opacity: 0.8;
+        font-family:'Titillium Web', sans-serif;
+       
+    }
+    .nav-mob nav a:hover{
+        opacity: 1;
+    }
+}

@@ -1,0 +1,93 @@
+
+
+
+
+
+
+/* //new edit */
+.mainContainer{
+margin: 2em;
+}
+
+.bookListJumbo{
+  background-image: url('../../image/croods.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0px;
+  box-sizing: border-box; 
+ 
+}
+.bookListContainer{
+  display: flex;
+  margin-right:10em;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  padding: 72px;
+ overflow-x: scroll;
+ 
+}
+.bookListContainer::-webkit-scrollbar {    display: none;}
+.bookListContainer>div{
+  margin-right: 1em;
+  height: 275px;
+}
+div.bookListJumbo.jumbotron
+{
+  background-color:#9fa9be;
+}
+
+.bookListContainer img:hover{
+  opacity: 0.8;
+}
+.headTitleFeatureDesktop{
+  margin:25px;
+
+
+}
+.headTitleFeatureMob{
+  display: none;
+}
+.fbc p{
+  margin-top: 10px;
+}
+.fbc:hover{
+  background: #dd3e54;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #6be585, #dd3e54);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #6be585, #dd3e54); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+box-shadow: 3px 2px 2px 1px rgba(0,0,0,0.8);
+text-decoration: underline;
+}
+@media only screen and (max-width:800px)
+{
+  .headTitleFeatureDesktop{
+    display: none;
+  }
+  .headTitleFeatureMob{
+    display: block;
+    margin: 45px;
+    font-size: 1.5em;
+  }
+  .mainContainer{
+    margin: 0px;
+    font-size: 0.7em;
+   }
+  div.bookListJumbo.jumbotron {
+    background-image: none;
+   
+
+    margin: 0px;
+    
+    background-color:#9fa9be;
+  }
+  .bookListContainer{
+    margin-right: 0px;
+    padding: -1px;
+  }
+  .bookListContainer>div{
+    margin-right: 1em;
+  
+  }
+  
+}

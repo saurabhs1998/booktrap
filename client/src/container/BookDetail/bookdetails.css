@@ -1,0 +1,166 @@
+.bookdetails{
+    display: flex;
+    flex-direction: row;
+}
+.bookdetailsContent{
+    margin:5px 15px;
+}
+.bookdetailsContent  h4{
+  font-family: 'Montserrat', sans-serif;;
+    opacity: 87;
+}
+.bookdetailsContent h6,p{
+    font-family: 'Poppins', sans-serif;
+
+}
+.bookdetailsRating{
+    display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
+.bookdetailsRating>div{
+    margin: 0px 10px;
+    padding:8px 8px;
+    border-radius: 5px;
+    background-color:inherit;
+    border: 1px solid #757575;
+    text-align: center;
+    font-size: 0.8em;
+    min-width: 60px;
+    min-height: 60px;
+    box-shadow: 3px 3px 0px 3px rgba(0, 0, 0, 0.2);
+}
+
+.aboutAuthor h5{
+    font-family: 'Montserrat', sans-serif;
+ margin-top: 10px;
+}
+.aboutAuthor p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+}
+.RateIt{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.RateIt>div{
+    margin: 15px;
+}
+.desktopViewBookDetails{
+    display: block
+}
+.mobileViewBookDetails{
+    display: none;
+}
+.RateItMob{
+    display: none;
+}
+.containermarquee {
+  overflow:hidden;
+  }
+  .marquee{
+    display:flex;
+    flex-direction:column;
+  position:relative;
+ 
+  animation:scroll 10s linear infinite ;
+  padding:3px;
+  }
+  
+  .marquee:hover {
+      animation-play-state: paused
+  }
+  
+  .marquee>div {
+  
+    margin:3px;
+    float:left;
+  }
+  
+  /* Make it move */
+  @keyframes scroll{
+    0%, 100% {
+        bottom: 0;
+      }
+      50% {
+        bottom:230px;
+      }
+  }
+@media only screen and (max-width:800px){
+    .bookdetailsRating{
+        display: flex;
+        flex-wrap: nowrap;
+    }   
+
+    .desktopViewBookDetails{
+        display: none;
+    }
+    .mobileViewBookDetails{
+        display: block;
+        margin-bottom: 24px;
+       
+    }
+    .footerCardicons{
+        display: flex;
+        flex-direction: row;
+        color: #BDBDBD;
+    }
+    .footerCardicons>div{
+        padding:0px 15px;
+        box-sizing: border-box;
+    }
+    .RateIt{
+        display: none;
+    }
+    .RateItMob{
+        display: flex;
+        flex-direction:row;
+        overflow-x: scroll;
+        padding: 15px;
+    }
+    .RateItMob::-webkit-scrollbar {    display: none;}
+    .RateItMob>div{
+        min-width: 150px;
+    }
+}
+
+#bookIcon{
+position: relative;
+}
+#bookIcon .tooltiptext {
+    visibility: hidden;
+    top: 100%;
+    width: 120px;
+    left: -40%;
+    right: 0%;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+  
+   opacity: 0;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+  }
+  #bookIcon .tooltiptext::after{
+    content: " ";
+    position: absolute;
+    bottom: 100%;  /* At the top of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+  }
+  #bookIcon:hover .tooltiptext{
+visibility:visible;
+opacity: 1;
+transition:opacity 1s ease-in;
+
+  }

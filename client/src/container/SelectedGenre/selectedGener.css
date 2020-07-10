@@ -1,0 +1,15 @@
+.desktopViewGener{
+    display: block;
+}
+.mobileViewGener{
+    display: none;
+}
+@media only screen and (max-width:800px)
+{
+    .desktopViewGener{
+        display: none;
+    }
+    .mobileViewGener{
+        display: block;
+    }
+}

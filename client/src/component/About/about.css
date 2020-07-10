@@ -1,0 +1,52 @@
+.aboutpage{
+  
+    height: 0;
+    width: 100%;
+   margin-top: 20px;
+    background-repeat: no-repeat;
+   height: 50vh;
+    justify-content: center;
+    color: white;
+    background-position: left;
+   
+}
+.bookabout{
+    height: 50vh;
+}
+.aboutpage h3{
+ font-family: 'Montserrat', sans-serif;
+ display: block;
+ text-align: center;
+}
+.bookabout, .aboutpage p{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 1.3em;
+    color: white;
+    word-spacing: 1px;
+}
+.bookabout p:hover{
+    transition: color 0.3s ease-in-out;
+    color:lightblue;
+}
+.aboutpage p:hover{
+    transition: color 0.3s ease-in-out;
+    color:lightblue;
+}
+@media only screen and (max-width:800px)
+{
+    .aboutpage{
+   
+       
+        background-repeat: no-repeat;
+        padding: 15px;
+        justify-content: center;
+        color: white;
+        background-position: bottom;
+        height: 45vh;
+       
+    }
+.bookabout p{
+    padding: 15px;
+}
+}
